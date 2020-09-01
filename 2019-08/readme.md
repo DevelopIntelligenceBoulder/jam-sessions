@@ -1,7 +1,7 @@
 
 # EXAPUNKS Emulator
 
-PyATL Jam Session — August 1st 2019
+(originally from PyATL Jam Session — August 1st 2019)
 
 ## Introduction
 
@@ -83,9 +83,6 @@ instructions and run it.
 
 ### Guidelines
 
-If you are relatively new to programming, this could be a steep challenge to
-get into. Here are a few ideas to help you start out:
-
 1. It is generally a good idea to start by identifying the inputs and outputs
    of the program. Here, the input is the code for the EXA, which will be just
    plain text. No need to worry about outputs for now; printing the register
@@ -101,10 +98,11 @@ get into. Here are a few ideas to help you start out:
 3. Before implementing the instructions, think about how you want to handle
    the registers. Here are some suggestions:
    * Just have the registers as variables.
-   * Go for an object-oriented approach, where `X` and `T` are attributes of
-     your EXA object.
    * Go for a functional approach, where the current register values (or state
      in general) is passed to instructions; those then return a new state.
+   * Go for an object-oriented approach, although we haven't covered this yet.
+     In this kind of solution, the registers `X` and `T` could be attributes of
+     an EXA object.
 
 4. If you manage to design the code parsing and register handling carefully,
    actually implementing the instructions should be fairly easy! The only
@@ -157,7 +155,7 @@ what operation the last five instructions are effectively doing?
 ## Challenge 2: Tests
 [challenge #2]: #challenge-2-tests
 
-I mentionned earlier that the `T` register was used for tests. This part of
+I mentioned earlier that the `T` register was used for tests. This part of
 the challenge will be to program the `TEST` instruction:
 
 * `TEST R/N = R/N`  
