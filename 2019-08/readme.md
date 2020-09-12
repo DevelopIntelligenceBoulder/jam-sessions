@@ -141,7 +141,7 @@ Here is another example for you to try your code on:
     MULI X T X
     MULI T T T
     ADDI X T X
-    DIVI T 10 T
+    DIVI T 9 T
     ADDI X 3 X
     ADDI T X T
     ADDI T X X
