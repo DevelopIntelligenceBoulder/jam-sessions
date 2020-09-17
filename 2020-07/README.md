@@ -40,7 +40,7 @@ More examples:
 
 ## Part 2: Handling Strings With Numbers
 
-The algorithm we implemented in part 1 has a big flaw: it cannot safely compress strings with numbers in them. For example, `'111122222222222'` has four 1s and eleven 2s so it would be compressed `'41112'`. But that's ambiguous: is this `4 x '1' + 10 x '2'`, `41 x '1' + 1 x '2'`, or `4112 x '2'`?
+The algorithm we implemented in part 1 has a big flaw: it cannot safely compress strings with numbers in them. For example, `'111122222222222'` has four 1s and eleven 2s so it would be compressed `'41112'`. But that's ambiguous: is this `4 x '1' + 11 x '2'`, `41 x '1' + 1 x '2'`, or `4112 x '2'`?
 
 We can solve this by limiting the size of any group to 9. If a sequence is longer than 9, we split it in groups of fewer than 9 as many times as needed.
 
